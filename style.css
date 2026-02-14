@@ -212,7 +212,7 @@ input[type="text"]:focus {
   border-color: var(--accent);
 }
 
-button[type="submit"] {
+.submit-btn {
   background: var(--accent);
   color: var(--body-bg);
   border: 1px solid var(--accent);
@@ -223,7 +223,7 @@ button[type="submit"] {
   transition: var(--transition);
 }
 
-button[type="submit"]:hover {
+.submit-btn:hover {
   background-color: transparent;
   color: var(--text-main);
 }
