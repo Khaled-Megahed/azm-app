@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عزم | Azm</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.69428293.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.8818b031.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.196eacaf.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/عزم.3a01df49.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo"><span>ع</span>azm</div>
+      <div class="view-switch">
+        <button id="listViewBtn" class="active-view" title="List View">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        <button id="matrixViewBtn" title="Matrix View">
+          <i class="fa-solid fa-table-cells-large"></i>
+        </button>
+        <div class="header-actions" style="align-items: center; gap: 15px; display: flex">
+          <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <div class="view-switch"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="add-section" aria-labelledby="add-task-title">
+        <form id="taskForm">
+          <div class="input-group">
+            <label for="importance">Importance</label>
+            <select name="importance" id="importance">
+              <option value="high">Important</option>
+              <option value="low">Not Important</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="urgency">Urgency</label>
+            <select name="urgency" id="urgency">
+              <option value="urgent">Urgent</option>
+              <option value="not-urgent">Not Urgent</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="timeframe">Timeframe</label>
+            <select name="timeframe" id="timeframe">
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="title">Goal Title</label>
+            <input type="text" id="title" name="title" required="" placeholder="e.g., Morning Workout" autocomplete="off">
+          </div>
+
+          <button type="submit" class="submit-btn">Add Task</button>
+        </form>
+      </section>
+
+      <nav class="filter-nav" aria-label="Task Filters">
+        <ul>
+          <li>
+            <button type="button" class="selectedFilter" data-filter="daily">
+              Daily
+            </button>
+          </li>
+          <li><button type="button" data-filter="weekly">Weekly</button></li>
+          <li><button type="button" data-filter="monthly">Monthly</button></li>
+          <li><button type="button" data-filter="yearly">Yearly</button></li>
+        </ul>
+      </nav>
+
+      <section id="listContainer" class="goals-display">
+        <h2>Your Goals</h2>
+        <ul id="goalsList" class="goals-list"></ul>
+      </section>
+
+      <section id="matrixContainer" class="matrix-display hidden">
+        <h2>Eisenhower Matrix</h2>
+        <div class="matrix-grid">
+          <div class="quadrant" id="doFirst">
+            <h3 class="q-title q-do">Do First</h3>
+            <div class="q-list"></div>
+          </div>
+          <div class="quadrant" id="schedule">
+            <h3 class="q-title q-schedule">Schedule</h3>
+            <div class="q-list"></div>
+          </div>
+          <div class="quadrant" id="delegate">
+            <h3 class="q-title q-delegate">Delegate</h3>
+            <div class="q-list"></div>
+          </div>
+          <div class="quadrant" id="eliminate">
+            <h3 class="q-title q-eliminate">Eliminate</h3>
+            <div class="q-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-summary">
+        <p>Total Tasks: <span id="taskCount">0</span></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 <span>ع</span>azm App</p>
+    </footer>
+
+    <script src="/عزم.23ddf92b.js" type="module"></script>
+  
+
+</body></html>

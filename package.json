@@ -1,0 +1,20 @@
+{
+  "name": "azm-app",
+  "version": "1.0.0",
+  "description": "Strategic Eisenhower Matrix Goal Tracker",
+  "homepage": "https://Khaled-Megahed.github.io/azm-app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Khaled Megahed",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4"
+  }
+}
