@@ -1,5 +1,5 @@
 import * as model from "./model.js";
-import FormView from "./views/FormView.js";
+import FormView from "./views/formView.js";
 import FilterView from "./views/filterView.js";
 import GoalListView from "./views/GoalListView.js";
 import MatrixView from "./views/MatrixView.js";
