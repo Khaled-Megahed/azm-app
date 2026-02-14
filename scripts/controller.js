@@ -1,8 +1,8 @@
 import * as model from "./model.js";
 import FormView from "./views/formView.js";
 import FilterView from "./views/filterView.js";
-import GoalListView from "./views/GoalListView.js";
-import MatrixView from "./views/MatrixView.js";
+import GoalListView from "./views/goalListView.js";
+import MatrixView from "./views/matrixView.js";
 
 const controlAddGoal = function () {
   const data = FormView._getFormData();
